@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>aframe-material😲😆😛</title>
+    <title>ARology</title>
     <meta name="description" content="Aframe-Material">
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
     <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
@@ -28,34 +28,23 @@
       <a-rounded position="0.5 0.5 -2.5" width="4" height="3.1" radius="0.05" rotation="0 -20 0" scale="0.3 0.3 0.3">
         <a-form>
           <a-switch position="0.2 2.7 0" enabled="true"></a-switch>
-          <a-radio position="0.2 2.4 0" width="3" name="food" label="Burger with fries and pizza" value="pizza"></a-radio>
-          <a-radio position="0.2 2.1 0" width="3" name="food" label="Veggies" checked="true" disabled="true"></a-radio>
-          <a-radio position="0.2 1.8 0" width="3" name="food" label="Ice cream"></a-radio>
-          <a-checkbox position="0.2 1.5 0" width="3" name="stuff" label="I am a checkbox" checked="true"></a-checkbox>
-          <a-checkbox position="0.2 1.2 0" width="3" name="stuff" label="And I am another one" checked="true" disabled="true"></a-checkbox>
-          <a-button position="0.2 0.8 0" name="stuff" value="Click me" type="raised"></a-button>
-          <a-button position="0.2 0.35 0" width="3" name="stuff" value="You cannot click me" disabled="true"></a-button>
+          
+          <a-link href="https://view.vuforia.com/command/view-experience?url=https%3A%2F%2Fj8dphewr.studio-trial.thingworx.io%2FExperienceService%2Fcontent%2Fprojects%2Fxr44%2Findex.html%3FexpId%3D1" ><a-button position="0.2 1.40 0" width="3" value="Review Scan" ></a-button></a-link>
+          <a-link href="http://18.224.39.141:3000" ><a-button position="0.2 0.90 0" width="3"  value="Import Scan" ></a-button></a-link>
+          <a-link href="https://clients.datavized.com/sage/index.html" ><a-button position="0.2 0.35 0" width="3" value="Datavisualization" ></a-button></a-link>
         </a-form>
       </a-rounded>
       <!-- END FORM -->
 
       <!-- BEGIN TOAST -->
-      <a-toast message="This is a toast" action="Got it"></a-toast>
+      <!-- <a-toast message="This is a toast" action="Got it"></a-toast> -->
       <!-- END TOAST -->
 
       <!-- BEGIN ENVIRONEMENT -->
-      <a-gradient-sky material="shader: gradient; topColor: 255 0 0; bottomColor: 0 121 255;"></a-gradient-sky>
+      <a-gradient-sky material="shader: gradient; topColor: blue; bottomColor: 0 121 255;"></a-gradient-sky>
       <!-- END ENVIRONEMENT -->
     </a-scene>
-    <script type="text/javascript">
-      let button = document.querySelector('a-button');
-      let toast = document.querySelector('a-toast');
-      toast.addEventListener('actionclick', ()=>{
-        toast.hide();
-      });
-      button.addEventListener('click', ()=> {
-        toast.show();
-      });
+
     </script>
   </body>
 </html>
